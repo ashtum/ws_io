@@ -316,7 +316,7 @@ bind_wrapper<MF, Arg0, Argn...>
 bind_front(
     MF&& mf,
     Arg0* arg0,
-    Argn&&... argn)
+    Argn&&...)
 {
     return bind_wrapper<MF, Arg0, Argn...>{ mf, shared_from(arg0) };
 }
